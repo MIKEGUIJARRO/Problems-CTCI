@@ -17,6 +17,7 @@
 export function isUnique(str: string): boolean {
 
     /* When another data structure is valid - Use Map */
+
     /* let mapSet = new Map<string, boolean>()
 
     for (let i = 0; i < str.length; i++) {
