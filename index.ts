@@ -1,9 +1,8 @@
-import { URLify, isUnique, checkPermutation } from "./Arrays and Strings/"
+import { URLify, isUnique, checkPermutation, isPalindromePermutation } from "./Arrays and Strings/"
 
-URLify
 function mainHandler() {
-    const str1 = 'lorem  ipsun    '
-    const result = URLify(str1)
+    const str1 = 'Anita lava la tina'
+    const result = isPalindromePermutation(str1)
     console.log(result)
 }
 
