@@ -1,8 +1,10 @@
-import { URLify, isUnique, checkPermutation, isPalindromePermutation } from "./Arrays and Strings/"
+import { URLify, isUnique, checkPermutation, isPalindromePermutation, isOneEditAway } from "./Arrays and Strings/"
 
 function mainHandler() {
-    const str1 = 'Anita lava la tina'
-    const result = isPalindromePermutation(str1)
+    const str1 = 'aba'
+    const str2 = 'mbas'
+
+    const result = isOneEditAway(str1, str2)
     console.log(result)
 }
 
