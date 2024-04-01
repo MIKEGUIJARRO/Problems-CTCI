@@ -1,10 +1,16 @@
-import { URLify, isUnique, checkPermutation, isPalindromePermutation, isOneEditAway } from "./Arrays and Strings/"
+import {
+    URLify,
+    isUnique,
+    checkPermutation,
+    isPalindromePermutation,
+    isOneEditAway,
+    stringCompression
+} from "./Arrays and Strings/"
 
 function mainHandler() {
-    const str1 = 'aba'
-    const str2 = 'mbas'
+    const str1 = 'aaabbb'
 
-    const result = isOneEditAway(str1, str2)
+    const result = stringCompression(str1)
     console.log(result)
 }
 
