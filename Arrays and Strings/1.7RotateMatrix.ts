@@ -49,14 +49,3 @@ function printMatrix(matrix: number[][]) {
         console.log(row)
     })
 }
-
-interface Point {
-    x: number
-    y: number
-}
-
-function recursiveLayerTransformation(matrix: number[][], layer: number) {
-    const point1: Point = { x: 0, y: 0 }
-    const point2: Point = { x: 0, y: 0 }
-
-}
