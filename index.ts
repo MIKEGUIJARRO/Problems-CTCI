@@ -4,13 +4,18 @@ import {
     checkPermutation,
     isPalindromePermutation,
     isOneEditAway,
-    stringCompression
+    stringCompression,
+    rotateMatrix
 } from "./Arrays and Strings/"
 
 function mainHandler() {
-    const str1 = 'aaabbb'
+    const str1 = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8]
+    ]
 
-    const result = stringCompression(str1)
+    const result = rotateMatrix(str1)
     console.log(result)
 }
 
