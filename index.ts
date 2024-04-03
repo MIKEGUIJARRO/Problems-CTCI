@@ -8,15 +8,29 @@ import {
     rotateMatrix
 } from "./Arrays and Strings/"
 
-function mainHandler() {
-    const str1 = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8]
-    ]
+import {
+    NodeItem,
+    deleteNode,
+    removeDuplicates
+} from './Linked Lists'
 
-    const result = rotateMatrix(str1)
-    console.log(result)
+function mainHandler() {
+    const head = new NodeItem<number>(1)
+    head.appendToTail(2)
+    head.appendToTail(3)
+    head.appendToTail(3)
+    head.appendToTail(3)
+    head.appendToTail(3)
+    head.appendToTail(3)
+    head.appendToTail(4)
+    head.appendToTail(5)
+
+    removeDuplicates(head)
+    let node = head
+    while (node.next !== null) {
+        console.log(node.data)
+        node = node.next
+    }
 }
 
 mainHandler()
