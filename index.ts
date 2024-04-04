@@ -11,7 +11,8 @@ import {
 import {
     NodeItem,
     deleteNode,
-    removeDuplicates
+    removeDuplicates,
+    returnKthToLastValue
 } from './Linked Lists'
 
 function mainHandler() {
@@ -25,12 +26,8 @@ function mainHandler() {
     head.appendToTail(4)
     head.appendToTail(5)
 
-    removeDuplicates(head)
-    let node = head
-    while (node.next !== null) {
-        console.log(node.data)
-        node = node.next
-    }
+    const response = returnKthToLastValue(head, 0)
+    console.log(response)
 }
 
 mainHandler()
